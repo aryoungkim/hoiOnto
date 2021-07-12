@@ -1,21 +1,17 @@
 # hoiOnto
 This project is a HOI ontology construction project that can be utilized in the HOI research field. HOI Ontology supports interoperability of different HOI Datasets. Also, you can efficiently search for information through the query you want, and create an integrated dataset that can be used additionally. More information on how to use it can be found [here](https://drive.google.com/drive/folders/1J8mN63bNIrTdBQzq7Lpjp4qxMXgYI-yF?usp=sharing).
 
-## Installation
-1. Clone:
+## Install and Download
+### 1. Clone:
 ```Shell
 git clone --recursive https://github.com/aryoungkim/hoiOnto.git
 ```
-2. Download data,annotations:
-```Shell
-bash download_data.sh
-```
-### Dataset
+### 2. Dataset
+To create an HOI ontology, To create a hoiOnto addset, we use the annotation files provided by the VSGNet authors. The annotation files can be downloaded from [here](https://drive.google.com/open?id=1WI-gsNLS-t0Kh8TVki1wXqc3y2Ow1f2R). The downloaded annotation files have to be placed as follows.
 
 #### HICO-DET
-HICO-DET dataset can be downloaded [here](https://drive.google.com/open?id=1QZcJmGVlF9f4h-XLWe9Gkmnmj2z1gSnk). After finishing downloading, unpack the tarball (`hico_20160224_det.tar.gz`) to the `data` directory.
+HICO-DET dataset can be downloaded [here](https://drive.google.com/open?id=1QZcJmGVlF9f4h-XLWe9Gkmnmj2z1gSnk). After finishing downloading, unzip the (`hico_20160224_det.tar.gz`), and then place the annotation files as follows.
 
-Instead of using the original annotations files, we use the annotation files provided by the PPDM authors. The annotation files can be downloaded from [here](https://drive.google.com/open?id=1WI-gsNLS-t0Kh8TVki1wXqc3y2Ow1f2R). The downloaded annotation files have to be placed as follows.
 ```
 hoiOnto
  |─ data
