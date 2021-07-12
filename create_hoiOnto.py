@@ -40,13 +40,11 @@ def get_all(data_name):
 
 
 def create_initial_hoiOnto(init, data_dir):
-
     """
-    :param save_folder: Name of the folder which you want to save
-
     You can choose the ontology format you want to save
     Choose between owl, rdf, and ttl by removing the comments.
     """
+
     obj_Dic = {}
 
     categories = coco.loadCats(coco.getCatIds())
