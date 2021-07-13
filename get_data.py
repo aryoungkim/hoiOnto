@@ -5,11 +5,10 @@ import json
 
 from scipy.io import loadmat
 from pycocotools.coco import COCO
-from io_utils import load_json_object, dump_json_object
 
 with open('infos/directory.json', 'r') as fp : data_dir = json.load(fp)
 
-coco = COCO(os.path.join(data_dir, 'coco_annotations/instances_trainval2017.json'))
+coco = COCO(os.path.join(data_dir, 'coco/instances_trainval2017.json'))
 
 VERB2ID = ['carry', 'catch', 'cut', 'drink', 'eat', 'hit','hold', 'jump', 'kick', 'lay', 'look', 'point', 'read', 'ride', 'run', 'sit', 'skateboard', 'ski', 'smile',
            'snowboard', 'stand', 'surf', 'talk_on_phone', 'throw', 'walk', 'work_on_computer']

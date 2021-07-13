@@ -36,27 +36,6 @@ parser.add_argument('-sa_ad', '--save_addset_file_name', default='hoiOnto_addset
                     help="The addset name in which you want to save")
 
 
-def ex():
-    ######################################################################################
-    # parser.add_argument('-exp_dir', '--expansion_hoiOnto_dir', default='f', type=str,
-    #                     help="Ontology path to be expand")
-    parser.add_argument('-ext_dir', '--extra_data_dir', default='f', type=str,
-                        help="Data path which you want to extra")                           ## 기본 경로는 /data 폴더 하위에 추가할 데이터를 먼저 넣어놓고, 그 이후 경로를 받아오기
-
-
-    parser.add_argument('-sn', '--save_folder', default='hoiOnto_set', type=str,            ## 온톨로지를 저장하려고 하는 파일 이름
-                        help="Name of the folder in which you want to save")
-
-    parser.add_argument('-rf', '--read_folder', default='hoiOnto_set', type=str,            ## 가져오려고 하는 온톨로지의 폴더 이름
-                        help="hoiOnto directory path to upload")
-    parser.add_argument('-rn', '--read_name', default='hoiOnto_set', type=str,            ## 가져오려고 하는 온톨로지의 폴더 이름
-                        help="hoiOnto directory path to upload")
-
-    parser.add_argument('-out_fo', '--output_onto_format', default='owl', type=str,
-                        help="The ontology format which you want to save")
-    parser.add_argument('-in_fo', '--input_onto_format', default='owl', type=str,
-                        help="The ontology format which you are trying to import")
-
 args = parser.parse_args()
 
 create_initial = args.create_initial_hoiOnto
@@ -98,5 +77,4 @@ if __name__ == '__main__':
 
     ## Create hoiOnto addset
     if addset :
-        print(addset)
         create_hoiOnto_addset(addset, save_addset)

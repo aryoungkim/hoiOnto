@@ -251,13 +251,13 @@ def create_hoiOnto_addset(addset, save_fileName):
         filter_data = 'coco'
         get_task_data = load_json_object('trainval_vcoco.json')
         get_imgid = [x for x in get_task_data.keys()]
-        add_anno_data = load_json_object('hico/train_annotations.json')
+        add_anno_data = load_json_object('hico/Annotations_hico/train_annotations.json')
 
     elif addset == 'hico':
         filter_data = 'HICO'
         get_task_data = load_json_object('test_hico.json')
         get_imgid = [x for x in get_task_data.keys()]
-        add_anno_data = load_json_object('vcoco/trainval_annotations.json')
+        add_anno_data = load_json_object('vcoco/Annotations_vcoco/trainval_annotations.json')
 
     elif addset == 'extra':
         ## Example

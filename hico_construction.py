@@ -42,10 +42,10 @@ def hico_create_action_and_pair(init, data_dir, resName, hoi_fileName):
             hicoPair, hoiPair_Dic = HoiPair(action.capitalize(), obj, resName).create_hoiPair(init, hoiPair)
 
     insID['hoiPairID'].update(hoiPair_Dic)
-    dump_pickle_object(origPhrase_Act, 'action_orgPhrase2.pkl', compress=False)
-    dump_pickle_object(insID, 'instID2.pkl', compress=False)
-    dump_pickle_object(all_act, 'all_act2.pkl', compress=False)
-    dump_pickle_object(all_obj, 'all_obj2.pkl', compress=False)
+    dump_pickle_object(origPhrase_Act, 'action_orgPhrase.pkl', compress=False)
+    dump_pickle_object(insID, 'instID.pkl', compress=False)
+    dump_pickle_object(all_act, 'all_act.pkl', compress=False)
+    dump_pickle_object(all_obj, 'all_obj.pkl', compress=False)
 
     return hicoAct + all_concat + hicoPair
 
@@ -54,7 +54,7 @@ def hico_add_action_and_imgInfo(init, resName):
     hico_data = load_json_object('train_hico.json')  # val_vcoco.json load
     img_id = hico_data.keys()
 
-    insID = load_pickle_object('instID2.pkl', compress=False)
+    insID = load_pickle_object('instID.pkl', compress=False)
     hoiPair = insID['hoiPairID']
     imgID = insID['imgID']
 
@@ -69,6 +69,6 @@ def hico_add_action_and_imgInfo(init, resName):
 
     insID['hoiPairID'] = hoiPair
     insID['imgID'] = imgID
-    dump_pickle_object(insID, 'instID2.pkl', compress=False)
+    dump_pickle_object(insID, 'instID.pkl', compress=False)
 
     return hicoimg

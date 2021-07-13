@@ -14,7 +14,7 @@ object_property = ["actionPhrase", "originalForm", "hasAction", "hasObject", "de
 data_property = ["hoiID", "fileName", "imageURL", "hasCompression"]
 
 with open('infos/directory.json') as fp : data_dir = json.load(fp)
-coco = COCO(os.path.join(data_dir, 'coco_annotations/instances_trainval2017.json'))
+coco = COCO(os.path.join(data_dir, 'coco/instances_trainval2017.json'))
 
 def get_all(data_name):
     vcoco_data_dict = {}

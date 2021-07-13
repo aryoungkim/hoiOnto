@@ -21,11 +21,11 @@ def data_split(hoi):
 
 def extra_add_action_and_pair(init, data_dir, resName, hoi_fileName):
 
-    origPhraseAct = load_pickle_object('action_orgPhrase2.pkl', compress=False)
-    insID = load_pickle_object('instID2.pkl', compress=False)
+    origPhraseAct = load_pickle_object('action_orgPhrase.pkl', compress=False)
+    insID = load_pickle_object('instID.pkl', compress=False)
     hoiPair = insID['hoiPairID']
-    all_act = load_pickle_object('all_act2.pkl', compress=False)
-    all_obj = load_pickle_object('all_obj2.pkl', compress=False)
+    all_act = load_pickle_object('all_act.pkl', compress=False)
+    all_obj = load_pickle_object('all_obj.pkl', compress=False)
 
     ##############################################################
     # with open(os.path.join(data_dir, hoi_fileName)) as f:
@@ -49,10 +49,10 @@ def extra_add_action_and_pair(init, data_dir, resName, hoi_fileName):
             extPair, hoiPair_Dic = HoiPair(act.capitalize(), obj, resName).create_hoiPair(init, hoiPair)
 
     insID['hoiPairID'].update(hoiPair_Dic)
-    dump_pickle_object(origPhrase_Act, 'action_orgPhrase4.pkl', compress=False)
-    dump_pickle_object(insID, 'instID4.pkl', compress=False)
-    dump_pickle_object(all_act, 'all_act4.pkl', compress=False)
-    dump_pickle_object(all_obj, 'all_obj4.pkl', compress=False)
+    dump_pickle_object(origPhrase_Act, 'action_orgPhrase.pkl', compress=False)
+    dump_pickle_object(insID, 'instID.pkl', compress=False)
+    dump_pickle_object(all_act, 'all_act.pkl', compress=False)
+    dump_pickle_object(all_obj, 'all_obj.pkl', compress=False)
 
     return extAct + all_concat + extPair
 
@@ -61,7 +61,7 @@ def extra_add_action_and_imgInfo(init, resName, img_fileName):
     extra_imgdata = load_json_object(img_fileName +'.json')  # val_vcoco.json load
     img_id = extra_imgdata.keys()
 
-    insID = load_pickle_object('instID4.pkl', compress=False)
+    insID = load_pickle_object('instID.pkl', compress=False)
     hoiPair = insID['hoiPairID']
     imgID = insID['imgID']
 
@@ -76,6 +76,6 @@ def extra_add_action_and_imgInfo(init, resName, img_fileName):
 
     insID['hoiPairID'] = hoiPair
     insID['imgID'] = imgID
-    dump_pickle_object(insID, 'instID4.pkl', compress=False)
+    dump_pickle_object(insID, 'instID.pkl', compress=False)
 
     return hcvrdimg
