@@ -30,7 +30,7 @@ hoiOnto
  |       |   |─ train_annotations.json
  |       |   └─ test_annotations.json
  :       :
- 
+ |─ data
  │   └─ hico
  |       |─ anno.mat
  |       |─ anno_bbox.mat
