@@ -1,5 +1,5 @@
 # hoiOnto
-This project is a HOI ontology construction project that can be utilized in the HOI research field. HOI Ontology supports interoperability of different HOI Datasets. In addition, user-based information retrieval is possible through queries, and create integrated datasets that can be used additionally. More information on how to use it can be found [here](https://drive.google.com/file/d/1UTuhXbkfKsiSE121cYLVj2hVqkRj6BtU/view?usp=sharing).
+This project is a HOI ontology construction project that can be utilized in the HOI research field. HOI Ontology supports interoperability of different HOI Datasets. In addition, user-based information retrieval is possible through queries, and create integrated datasets that can be used additionally. More information on how to use it can be found [here](https://drive.google.com/file/d/1D4yOkScdpQga1DKHt3aimGlmABw7b98G/view?usp=sharing).
 
 ## Download
 ### 1. Clone
