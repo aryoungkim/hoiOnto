@@ -10,7 +10,7 @@ git clone --recursive https://github.com/aryoungkim/hoiOnto.git
 We generated the HOI ontology using the HOI datasets. As one of HOI ontology use cases, we created a hoiOnto addset from the HOI ontology and applied it to VSGNet. The hoiOnto addset was created using the annotation file provided by the VSGNet authors.
 
 First to create an HOI ontology, download the COCO, V-COCO, HICO-Det datasets (require only annotation files). 
-- COCO dataset can be downloaded [here](https://cocodataset.org/#download) 'annotations_trainval2017.zip'. 
+- COCO dataset can be downloaded [here](https://cocodataset.org/#download). Download `annotations_trainval2017.zip`. 
 - Clone the repository of V-COCO from [here](https://github.com/s-gupta/v-coco), and then follow the instruction to generate the file `instances_vcoco_all_2017.json`. 
 - HICO-DET dataset can be downloaded [here](https://drive.google.com/open?id=1QZcJmGVlF9f4h-XLWe9Gkmnmj2z1gSnk). After finishing downloading, unzip the (`hico_20160224_det.tar.gz`). 
 - Follow the instruction to download the annotation file provided by the VSGNet. The annotation files can be downloaded from [here](https://github.com/ASMIftekhar/VSGNet). 
