@@ -2,7 +2,7 @@
 This project is a HOI ontology construction project that can be utilized in the HOI research field. HOI Ontology supports interoperability of different HOI Datasets. In addition, user-based information retrieval is possible through queries, and create integrated datasets that can be used additionally. More information on how to use it can be found [here](https://drive.google.com/drive/folders/1J8mN63bNIrTdBQzq7Lpjp4qxMXgYI-yF?usp=sharing).
 
 ## Download
-### 1. Clone:
+### 1. Clone
 ```Shell
 git clone --recursive https://github.com/aryoungkim/hoiOnto.git
 ```
