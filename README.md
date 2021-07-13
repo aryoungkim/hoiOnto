@@ -36,7 +36,7 @@ hoiOnto
  |       |─ anno_bbox.mat
  |       |─ hico_list_hoi.txt
  :       :
- |       |─ Annotations_vcoco
+ |       |─ Annotations_hico
  |       |   |─ train_annotations.json
  |       |   └─ test_annotations.json
  :       :
