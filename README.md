@@ -40,3 +40,14 @@ hoiOnto
  |       |   └─ test_annotations.json
  :       :
 ```
+```
+VSGNet
+ |─ All_data
+ │   └─ Annotations_vcoco
+ |       |─ addTrain_hoiOnto.json
+ |       |─ addVal_hoiOnto.json
+ :       :
+ │   └─ Annotations_hico
+ |       |─ addTrain_hoiOnto.json
+ :       :
+```
