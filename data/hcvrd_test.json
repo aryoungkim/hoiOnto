@@ -1,0 +1,40 @@
+{
+    "2353889": {
+        "file_name": "2353889.jpg",
+        "hois": [
+            "swimming/bat"
+        ]
+    },
+    "2379095": {
+        "file_name": "2379095.jpg",
+        "hois": [
+            "has_on/cap",
+            "near/blender"
+        ]
+    },
+    "2334683": {
+        "file_name": "2334683.jpg",
+        "hois": [
+            "in/clothes",
+            "in/helmet",
+            "putting_on/helmet"
+        ]
+    },
+    "2320168": {
+        "file_name": "2320168.jpg",
+        "hois": [
+            "on/motorbike",
+            "is_on/bike"
+        ]
+    },
+    "2410049": {
+        "file_name": "2410049.jpg",
+        "hois": [
+            "looking_out_of/train",
+            "wears/eyeglass",
+            "concentrating_on/book",
+            "holds/book",
+            "with_no/seat"
+        ]
+    }
+}
