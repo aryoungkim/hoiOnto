@@ -16,17 +16,17 @@ parser.add_argument('-hd_ep', '--hico_data_expansion', default='f', type=str,   
 # other dataset parameters
 parser.add_argument('-ext_ep', '--extra_dataset_expansion', default='f', type=str,              ## t(true) or f(false)
                     help="If you want to expand the other dataset, try it")
-parser.add_argument('-ext_rn', '--extra_dataset_resource_name', type=str,                       ## 추가할 데이터셋 리소스 이름
+parser.add_argument('-ext_rn', '--extra_dataset_resource_name', type=str,                      
                     help="The name of the data resource to expand (Added to 'InteractionSource class' instance)")
-parser.add_argument('-ext_hoi', '--extra_dataset_hoiPair', type=str,                            ## 추가할 데이터셋 리소스 이름
+parser.add_argument('-ext_hoi', '--extra_dataset_hoiPair', type=str,                         
                     help="The name of the HOI Pair data file")
-parser.add_argument('-ext_img', '--extra_dataset_img', type=str,                                ## 추가할 데이터셋 리소스 이름
+parser.add_argument('-ext_img', '--extra_dataset_img', type=str,                               
                     help="The name of the Image information data file")
 
 # file name parameters
-parser.add_argument('-ro', '--read_onto_file_name', type=str,                                   ## 확장하려고 하는 온톨로지 파일 이름
+parser.add_argument('-ro', '--read_onto_file_name', type=str,                                   
                     help="Ontology file name to be expanded")
-parser.add_argument('-sa_eo', '--save_exp_onto_file_name', default='exp_hoiOnto', type=str,     ## 확장 온톨로지 저장 파일 이름
+parser.add_argument('-sa_eo', '--save_exp_onto_file_name', default='exp_hoiOnto', type=str,     
                     help="The newly expanded hoiOnto name in which you want to save")
 
 # addset parameters
