@@ -77,7 +77,7 @@ def hico_dataset_expansion(init, previous_onto, data_dir):
         get_all('train_hico')
 
     ## HICO - Action, HOI Pair, Image Create
-    extra_pair = hico_create_action_and_pair(init, data_dir, 'hico', "hico_list_hoi.txt")
+    extra_pair = hico_create_action_and_pair(init, data_dir, 'hico', "hico_list_hoi_.txt")
     extra_img = hico_add_action_and_imgInfo(init, 'hico')
 
     ext_onto = extra_pair + extra_img
